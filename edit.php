@@ -87,7 +87,7 @@ $stmt->close();
         }
 
         form {
-            max-width: 400px;
+            max-width: 600px;
             margin: auto;
         }
 
@@ -341,7 +341,7 @@ $stmt->close();
         }
 
         input {
-            width: 100%;
+            width: 700px;
             height: 30px;
             padding: 0 15px;
             background-color: transparent;
@@ -374,11 +374,11 @@ $stmt->close();
             border-radius: 10px;
             border: none;
             width: 600px;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #ccc;
             padding: 10px;
             flex: 1;
-            height: 300px;
+            height: 200px;
             border: #bda7a7ff dashed;
 
         }
@@ -386,9 +386,9 @@ $stmt->close();
         .container,
         .back {
             display: flex;
-            gap: 20px;
-            padding: 20px;
-            margin-top: 70px;
+            gap: 10px;
+            padding: 10px;
+            /* margin-top: 10px; */
         }
 
 
@@ -398,11 +398,14 @@ $stmt->close();
             background: #d6c8c58c;
             /* blanc transparent */
             backdrop-filter: blur(10px);
-            margin-top: 50px;
             text-align: center;
             text-align: center;
             border: #bda7a7ff dashed;
             border-radius: 10px;
+            padding: 10px;
+            margin-top:-90px ;
+            margin-left: 188px;
+            
         }
 
         .back a {
@@ -420,7 +423,7 @@ $stmt->close();
 
         .container {
             width: 75%;
-            margin: auto;
+            margin:  0 auto;
 
         }
 
@@ -437,7 +440,7 @@ $stmt->close();
             background-color: #e8e1df;
             border: #bda7a7ff dashed;
             width: 75%;
-            border-radius: 10Px;
+            border-radius: 10px;
             margin-top: 80px;
 
 

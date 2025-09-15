@@ -13,15 +13,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ]
     ];
 
+    //options c pour envoyer une requête HTTP POST avec un contenu JSON.
+
     $context = stream_context_create($options);
     $result = file_get_contents('http://127.0.0.1:5000/ask', false, $context);
 
     if ($result !== false) {
         $json = json_decode($result, true);
-        $response = $json["response"] ?? "No answer from the chatbot.";
+        $response = $json["response"] ?? "No answer from the chatbot."; 
+        // On récupère la réponse du chatbot, ou un message par défaut si pas de réponse.
     } else {
         $response = "Communication error with the chatbot.";
     }
+
+    
 }
 ?>
 
